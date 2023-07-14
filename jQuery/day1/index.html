@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- CDN방식 -->
+    <script>
+      // jquery는 항상 위에있어야한다.
+      // 숫자와 문자변수는 더하면 문자로 바뀐다.
+      let a = '1'
+      let b = '1'
+      console.log(a - b);//타입스크립트의 탄생
+      //문자형 변수는 +를 제외한 사칙연산 가능하다.
+      //변수를 선언할때는 scope(var,let,const) 사용
+      //변수를 호출하기전 변수가 선언되어야함
+      //= 기호는 오른쪽에서 왼쪽에 대입
+      //parseInt('1') -> 1
+      //parseInt('1.2345') -> 1
+      //parseInt('1'+'2') -> 12
+      //값과값은 사칙연산으로 연결한다.
+      //탬플릿리터럴을 사용하길 권장``
+      let c = parseInt(prompt('나누어질 숫자 입력'))
+      let d = parseInt(prompt('나눌 숫자'))
+      let mock = parseInt(c/d)
+      let namji = parseInt(c-d*mock)
+      alert('몫'+mock+'나머지'+namji)
+    </script>
+  </head>
+  <body>
+    <!-- 
+        크로스브라우징 : 엣지 크롬 사파리 오페라 파이어폭스
+        jquery : 라이브러리 
+        es6(바닐라스크립트)
+     -->
+    <!-- 
+        null : 일부러 비움
+        undifined : 비워진 상태
+        NaN : 숫자오류(계산식)
+      -->
+    <section>
+      <pre>
+            1.
+            var a = 1
+            var b = '2'
+            var c = a + b 
+            console.log(c)
+        </pre
+      >
+      <pre>
+            2.
+            var a = 1
+            var b = a
+            var c = b
+            var d = a + b + c
+            console.log(d)
+        </pre
+      >
+      <pre>
+            3.
+            var a = '1'
+            a = a + a
+            var b = '2' 
+            b = b + b
+            console.log('결과는' + a * b)
+        </pre
+      >
+    </section>
+  </body>
+</html>

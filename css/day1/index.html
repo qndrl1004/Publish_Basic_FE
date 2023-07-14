@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* 인터널스타일 */
+      body{
+        /* body안에 글자 회색 */
+        color: gray;
+      }
+      h1{
+        /* h1안에 글자 아쿠아(자식이 우선순위가 높다.) */
+        color: aqua;
+      }
+      h2{
+        color: blue;
+      }
+      h3{
+        color: orange;
+      }
+      .green{
+        color: green;
+      }
+      #pink{
+        color: pink;
+      }
+    </style>
+    <title>창윤이 바보</title>
+  </head>
+  <body>
+    <main>
+      <h1><abbr>선택자</abbr></h1>
+      <p>casecading style sheet</p>
+      <hr />
+      <section>
+        <h2>특징과 개념</h2>
+        <ul>
+          <li>html문서를 기반으로 한 디자인 언어</li>
+          <li>우선순위가 존재한다</li>
+          <li>상속개념(inheritance)이 존재한다</li>
+          <li>다양한 선택자(selecter)가 존재한다</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2 class="green">선택자(selector)</h2>
+        <article>
+          <h3>태그선택자(type selecter)</h3>
+          <ul>
+            <li>
+              style엘리먼트 안쪽에서 tagname{속성(property):속성값(value)}
+            </li>
+            <li>모든 태그에 동일한 스타일이 적용된다.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>class selecter</h3>
+          <ul>
+            <li>
+              style요소안에서 .클래스네임{속성:속성값} 선언후 html요소의 속성
+              class 속성으로 호출
+            </li>
+            <li>우선순위 : 클래스, 태그선택자</li>
+            <li>반복해서 호출이 가능하다.(수정 관리가 용이하다.)</li>
+          </ul>
+        </article>
+        <article>
+          <h3 id="pink">아이디 선택자</h3>
+          <ul>
+            <li>
+              style요소내에서 #아이디{속성:속성값}선언후, html id속성으로 호출
+            </li>
+            <li>id는 중복호출 불가하다.</li>
+            <li>우선순위 : 아이디,클래스</li>
+          </ul>
+        </article>
+        <article>
+          <h3 style="color: red;">inline style</h3>
+          <ul>
+            <li>html요소의 style속성을 추가후 css문법을 작성</li>
+            <li>선택자들보다 우선순위가 높다.</li>
+            <li>script로 스타일을 제어할때 사용된다.</li>
+            <li>!important</li>
+          </ul>
+        </article>
+        <article>
+          <h3>우선순위</h3>
+          <ul>
+            <li>속성: 속성값 !important;</li>
+            <li>inline style</li>
+            <li>id selector</li>
+            <li>class selector</li>
+            <li>type selector</li>
+            <li>chidren selector</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
