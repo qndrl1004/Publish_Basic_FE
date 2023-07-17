@@ -1,5 +1,12 @@
-* {
-  font-size: 17px;
+/* body 보다 더 광범위한 * 유니버셜이다 */
+.ex1 :nth-child(5n + 1) {
   color: red;
 }
-/* body 보다 더 광범위한 * 유니버셜이다 */
+
+.ex2 span:nth-of-type(odd) {
+  color: red;
+}
+
+.ex3 :first-of-type {
+  color: red;
+}
