@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>많은 선택자</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>다양한 선택자</h1>
+      <hr />
+      <section class="ex1">
+        <h2>전체선택자(univaersial selector)</h2>
+        <p>*{} : 모든 엘리먼트를 의미한다.</p>
+      </section>
+      <section class="ex2">
+        <h2>combine selector</h2>
+        <p>
+          div.box : box라는 이명을 가진 div<br />
+          div#box.box : 아이가 box이면서 클래스는 box인 div<br />
+          :hover : *가 생략되고 모든게 호버효과
+        </p>
+      </section>
+      <section class="ex3">
+        <h2>Adjacent Sibling Selector</h2>
+        <p>
+          div + : 태그 뒤에있는 하나만 된다.<br />
+          div ~ * : 태그 뒤에있는 모든것<br />
+          div ~ p : 태그 뒤에 선택된 태그들
+        </p>
+      </section>
+      <section class="ex4">
+        <h2>가상 셀렉터</h2>
+        <p>
+          :first-child : 모든요소 순서를 기준으로 첫번째인 div찾는다.
+          div:first-child 0개 <br />
+          div:first-of-type 맨 앞에 div<br />
+          p,div,div,div,a,span
+        </p>
+        <p>:first-of-type : div순서를 기준으로 첫번째 태그</p>
+        <p>:last-child : 마지막에 있는 태그를 선택</p>
+        <p>:last-of-type : div순서를 기준으로 마지막 태그</p>
+      </section>
+      <section class="ex5">
+        <h2>가상 클래스</h2>
+        <p>
+          :nth-child(n) : n번째 태그<br />
+          :nth-of-type(n) : 태그중 n번째<br />
+          p,p,div,div,a,a, <br />
+        </p>
+        <p>
+          div:nth-child(even) : 모든요소 기준으로 짝수 번째<br />
+          div:nth-of-type(even) : div 기준으로 짝수 번째 div<br />
+          a,div,div,p,div,div<br />
+          div:nth-child(odd) : 모든요소 기준으로 홀수 번째<br />
+          div:nth-of-type(odd) : div 기준으로 홀수 번째 div<br />
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
