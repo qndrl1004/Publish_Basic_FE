@@ -1,0 +1,10 @@
+.ex4 b:nth-child(even):not(:last-child) {
+  color: aqua;
+}
+.ex5 a[href] {
+  font-style: italic;
+}
+.ex5 a[href="http://"]
+{
+  background-color: red;
+}
