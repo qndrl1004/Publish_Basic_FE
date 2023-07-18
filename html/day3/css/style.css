@@ -1,0 +1,54 @@
+img.chang {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+}
+img.chang:hover {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+a.facebook {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-image: url(../img/facebook.jpg);
+}
+
+a.facebook:hover {
+  background-image: url(../img/facebook_over.png);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+}
+
+.box1 {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: repeat-y;
+  background-position: right;
+}
+.box2 {
+  background-image: url(../img/bg2.jpg), url(../img/bg2.jpg);
+  background-repeat: repeat-y, repeat-x;
+  background-position: center 0, 0 center;
+}
+.box3 {
+  background-image: url(../img/IMG_0583.JPG);
+  background-size: 200px 200px;
+  background-position: center;
+}
+/* 
+    jpg,png px(bitmap)방식으로 만들어짐
+    jpg는 압축을 안함
+    png(alpha)는 투명한 영역을 저장하며 압축가능
+    svg vector방식으로 만들어짐
+    ratio w,h변화함
+    object-fit: cover는 이미지가 잘리고,contain은 쏙 들어간다 (img,video가능)
+    object-position: left-top,center,(x,y축을 설정한다);
+    img는 정보 background는 심미성 
+*/
