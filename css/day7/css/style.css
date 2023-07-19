@@ -1,0 +1,89 @@
+.ex1 {
+  width: 500px;
+  margin: 0 auto;
+  padding: 100px;
+  box-sizing: border-box;
+  background: red;
+}
+
+.ex1 div {
+  width: 100px;
+  height: 100px;
+  background: black;
+  color: aliceblue;
+}
+
+.ex1 div:nth-child(2) {
+  margin: 0 auto;
+}
+
+.ex1 div:nth-child(3) {
+  margin: 0 0 0 auto;
+}
+
+.ex2 {
+  width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 100px;
+  background: red;
+}
+
+.ex2 > div {
+  background: black;
+}
+
+.ex2 > div > div {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+
+.ex2 > div div:last-child {
+  margin: 100px 0 0 auto;
+}
+/* 
+ 높이는 변하지않는 레이아웃에다 사용해야한다.
+ 높이는 안쪽부터 사용해야 한다.
+ 블럭 에서 첫번째 자식은 마진탑,마지막자식은 마진바텀이 안된다.
+*/
+
+.ex3 span {
+  display: inline-block;
+  border: 1px solid red;
+  margin: 30px 0;
+  background: yellow;
+}
+
+.ex4 div {
+  margin: 30px 0;
+  background: yellow;
+}
+
+.ex5 {
+  width: 670px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 0 auto;
+  background: black;
+}
+
+.ex5 > div {
+  width: 290px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: red;
+}
+
+.ex5 div:last-child {
+  margin: 30px 0 0 auto;
+}
+.ex5 > div > div {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+.ex5 > div > div:last-child {
+  margin: 30px 0 0 auto;
+}
