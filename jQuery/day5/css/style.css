@@ -57,3 +57,7 @@
   background: yellow;
   color: black;
 }
+
+.ex4 button.active {
+  color: aqua;
+}

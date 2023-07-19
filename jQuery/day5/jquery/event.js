@@ -28,6 +28,11 @@ $(function () {
     $(this).siblings("div").children("button").removeClass("active");
     $(this).children("button").addClass("active");
   });
+
+  $(".ex4 button").click(function () {
+    $(this).parent().siblings("p").children("button").removeClass("active");
+    $(this).toggleClass("active");
+  });
 }); //ready
 
 //$(".ex1 .img3").show(); display level을 jquery가 조정
