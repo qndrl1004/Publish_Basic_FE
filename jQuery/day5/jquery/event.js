@@ -20,12 +20,12 @@ $(function () {
 
   $(".ex3 button").click(function (e) {
     e.stopPropagation(); //버블링을 막는다
-    $(".ex3 .box").removeClass("active");
+    $(this).parent().siblings("div").removeClass("active");
     $(this).parent().addClass("active");
   });
 
-  $(".ex3 div").click(function () {
-    $(".ex3 button").removeClass("active");
+  $(".ex3 div>div").click(function () {
+    $(this).siblings("div").children("button").removeClass("active");
     $(this).children("button").addClass("active");
   });
 }); //ready
