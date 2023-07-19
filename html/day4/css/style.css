@@ -4,6 +4,10 @@ ul li {
 
 ul li::before {
   content: "* ";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: black;
 }
 
 /* ::after 는 뒤에 가상으로 생긴다. */

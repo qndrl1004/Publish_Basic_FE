@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display level</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>display level</h1>
+      <hr />
+      <section>
+        <h2>display의 종류</h2>
+        <article>
+          <h3>block level</h3>
+          <ul>
+            <li>한줄을 통째로 차지하는 요소</li>
+            <li>기본적으로 부모의 넓이와 동일한 넓이를 가지게됨</li>
+            <li>크기 속성을 가질수 있다</li>
+          </ul>
+        </article>
+        <article>
+          <h3>inline level</h3>
+          <ul>
+            <li>줄내림이 되지 않는 요소</li>
+            <li>크기속성을 가질 수 없다</li>
+            <li>a, small, em, i</li>
+          </ul>
+        </article>
+        <article>
+          <h3>inline-block 레벨</h3>
+          <ul>
+            <li>줄내림이 되지 않으면서, 크기를 가질 수 있음</li>
+            <li>
+              (inline-block tag) : svg, img, video, iframe, button, input,
+              textarea
+            </li>
+          </ul>
+        </article>
+      </section>
+      <hr />
+      <section>
+        <h2>inline 레벨간의 수평 줄맞춤</h2>
+        <div class="ex1">
+          <span>span</span>
+          <span>span</span>
+          <span>span</span>
+        </div>
+        <hr />
+        <div class="ex1_2">
+          <span>span</span>
+          <span>span</span>
+          <span>span</span>
+        </div>
+        <ul>
+          <li>text-alingn은 요소 안쪽 글자및 인라인 계열 요소를 정렬</li>
+          <li>
+            lint-heihgt은 행간을 제어하는 속성이지만, 요소의 높이와 동일하게
+            설정할 경우 수직 중앙정렬 기능으로 사용됨 (!한줄일 경우만 사용가능)
+          </li>
+          <li>
+            vertical-align 속성은 글자및 인라인계열요소의 수평줄맞춤 기능으로
+            사용
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h3>block level의 수평정렬</h3>
+        <ul>
+          <li>margin의 auto값을 사용(x축만 가능,block값만 가능하다)</li>
+          <li>inline은 auto값이 불가능 하다.</li>
+        </ul>
+        <div class="ex2">
+          <span>span</span>
+        </div>
+        <hr />
+        <div class="test">
+          <span class="s_1">span</span>
+          <span class="s_2">span</span>
+          <span class="s_3">span</span>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

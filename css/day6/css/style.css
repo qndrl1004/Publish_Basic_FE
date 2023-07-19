@@ -1,0 +1,100 @@
+h1 {
+  background: rgb(0, 255, 64);
+  text-align: center;
+  line-height: normal;
+}
+
+.ex1 {
+  text-align: center;
+}
+
+.ex1 span {
+  display: inline-block;
+  background: yellow;
+  width: 100px;
+}
+
+.ex1 span:nth-child(1) {
+  height: 150px;
+}
+
+.ex1 span:nth-child(2) {
+  height: 100px;
+}
+
+.ex1 span:nth-child(3) {
+  height: 50px;
+}
+
+.ex1_2 span {
+  display: inline-block;
+  background: yellow;
+  width: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.ex1_2 span:nth-child(1) {
+  height: 150px;
+  line-height: 150px;
+}
+
+.ex1_2 span:nth-child(2) {
+  height: 100px;
+  line-height: 100px;
+}
+
+.ex1_2 span:nth-child(3) {
+  height: 50px;
+  line-height: 50px;
+}
+
+.ex2 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: right;
+  background: yellow;
+}
+
+.ex2 span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: gray;
+  text-align: center;
+  line-height: 100px;
+  margin-top: 50px;
+}
+
+.test {
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  background: yellow;
+  text-align: center;
+  line-height: 100px;
+}
+
+.s_1 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: gray;
+  margin: 0 125px;
+}
+
+.s_2,
+.s_3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+/* 
+한줄일때 line-height 
+항상 상속을 생각한다.
+x축만 auto가능
+inline계열은 margin-top가능
+*/
