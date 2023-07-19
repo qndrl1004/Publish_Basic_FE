@@ -31,6 +31,7 @@ $(function () {
 
   $(".ex4 button").click(function () {
     $(this).parent().siblings("p").children("button").removeClass("active");
+    //$('.ex4 button').not($(this)).removeClass('active')
     $(this).toggleClass("active");
   });
 }); //ready
