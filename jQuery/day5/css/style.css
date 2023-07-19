@@ -1,0 +1,59 @@
+.slider {
+  width: 200px;
+  margin: 30px auto;
+  border: 5px solid salmon;
+}
+
+.slider img {
+  width: 100%;
+  display: none;
+}
+
+.slider .img1 {
+  display: block;
+}
+
+.slider .btns {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: black;
+}
+
+.slider .btns button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: gainsboro;
+  opacity: 0.5;
+}
+
+.slider .btns .btn1 {
+  background-color: aqua;
+  width: 30px;
+  opacity: 1;
+}
+
+.ex3 .box {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 300px;
+}
+
+.ex3 .box.active {
+  background: red;
+  border-radius: 50%;
+}
+
+.ex3 button.active {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  background: yellow;
+  color: black;
+}
