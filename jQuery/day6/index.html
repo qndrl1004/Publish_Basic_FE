@@ -3,19 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>플롯</title>
+    <title>조건문</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="./jquery/event.js"></script>
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./js/script.js" />
   </head>
   <body>
     <main>
-      <h1>float</h1>
-      <section>
-        <h3></h3>
-      </section>
-      <!-- float,flex,grid,script layout-->
+      <h1>조건문</h1>
+      <div class="ex1">
+        <p>1. one에 해당하는 숫자를 입력하세요.</p>
+        <p><input type="number" /></p>
+        <p><button>결과보기</button></p>
+        <p class="result">result</p>
+      </div>
+      <hr />
+      <div class="ex2">
+        <p>2. one, three, nine중에 하나의 숫자를 입력하세요.</p>
+        <p><input type="number" /></p>
+        <p><button>결과보기</button></p>
+        <p class="result">result</p>
+      </div>
+      <hr />
+      <div class="ex3">
+        <p>3. 5보다 적거나 10보다 큰수를 입력하세요.</p>
+        <p><input type="number" /></p>
+        <p><button>결과보기</button></p>
+        <p class="result">result</p>
+      </div>
+      <hr />
+      <div class="ex4">
+        <p>4. 5이상이면서 11보다이하를 입력하세요.</p>
+        <p><input type="number" /></p>
+        <p><button>결과보기</button></p>
+        <p class="result">result</p>
+      </div>
+      <hr />
+      <div class="ex5">
+        <p>5. 상품 수량을 선택하면 가격이 출력됩니다.</p>
+        <p>
+          상품 :
+          <select name="상품" id="">
+            <option value="1000">음료수</option>
+            <option value="2000">과자</option>
+            <option value="4000">담배</option>
+          </select>
+        </p>
+        <p>
+          수량 :
+          <input type="radio" value="1" /> 1 <input type="radio" value="2" /> 2
+          <input type="radio" value="3" /> 3
+        </p>
+        <p>구매자연령 : <input type="number" /></p>
+        <p><button>결과보기</button></p>
+        <p class="result">result</p>
+        <!-- <- 19세미만은 담배 못삼-> -->
+      </div>
+      <hr />
+      <div class="ex6">
+        <p>6. 100이상이면서 200이하인 임의의 짝수만 참이다.</p>
+        <p><input type="number" /></p>
+        <p><button>결과보기</button></p>
+        <p class="result">결과</p>
+      </div>
+      <hr />
+      <div class="ex7">
+        <p>
+          7. 성년여부와 점수를 입력하면 등급이 출력되요.<br />
+          성인 : 80점 이상 합격<br />
+          미성인 : 60점 이상 합격<br />
+        </p>
+        <p>
+          <input type="radio" name="b" value="adult" />성인
+          <input type="radio" name="b" value="kid" />미성인
+        </p>
+        <p>점수 : <input type="number" /></p>
+        <p><button>결과보기</button></p>
+        <p class="result">결과</p>
+      </div>
+      <hr />
+      <div class="ex8">
+        <p>
+          BMI = 체중 / (신장/100*신장/100)
+          <br />
+          남성의 체지방률 ~15미만 : 마름 15이상~20미만 : 저체중 20이상~25미만 :
+          적정 25이상~30미만 : 과체중 30이상 : 비만
+          <br />
+          여성의 체지방률 ~20미만 : 마름 20이상~25미만 : 저체중 25이상~30미만 :
+          적정 30이상~35미만 : 과체중 35이상 : 비만
+        </p>
+        <p>
+          <input type="radio" name="s" value="men" />남
+          <input type="radio" name="s" value="fmen" />여
+        </p>
+        <p>체중 : <input type="number" name="kg" />kg</p>
+        <p>키 : <input type="number" name="m" />m</p>
+        <p><button>결과보기</button></p>
+        <p class="result">BMI : ?</p>
+      </div>
     </main>
   </body>
 </html>
