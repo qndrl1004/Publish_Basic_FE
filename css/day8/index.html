@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./jquery/event.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./js/script.js" />
+  </head>
+  <body>
+    <main>
+      <h1>float</h1>
+      <ul>
+        <li>
+          float이 적용된 객체의 부모는 높이가 사라진다.(clearfix 문제해결)
+        </li>
+        <li>
+          float이 적용된 객체는 display속성이 적용되지 않는다<br />
+          (block레벨의 넓이가 없어짐, inline레벨도 크기를 가질 수 있다, margin의
+          auto는 적용이 되지않는다.)
+        </li>
+        <li>
+          float이 적용되지않은 요소는 , float요소와 margin을 설정할 수 없음
+        </li>
+      </ul>
+      <!-- flex(격자),float(크기가 같은),grid(크기가 다양한),script(패턴이 없는 형태) layout-->
+    </main>
+    <hr />
+    <div class="ex1">
+      <span>최근 올라온 뉴스</span>
+      <span>창윤이</span>
+      <!-- clearfix필요 없는경우 -->
+    </div>
+    <hr />
+    <div class="ex2">
+      <p>최근 올라온 뉴스</p>
+      <p>창윤이</p>
+      <!-- clearfix필요 필요한경우 -->
+    </div>
+    <hr />
+    <div class="container1">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="wbox box8">8</div>
+      <div class="wbox box9">9</div>
+      <!-- 가상엘리먼트 -->
+      <!-- overflow: auto 사용하지말 것 -->
+    </div>
+    <hr />
+    <div class="container2">
+      <div class="longbox box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="longbox box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+    </div>
+    <hr />
+    <div class="container3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+  </body>
+</html>

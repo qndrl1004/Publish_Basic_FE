@@ -1,0 +1,157 @@
+.ex1 span:last-child {
+  float: right;
+}
+
+.ex2 {
+  border: 1px solid salmon;
+}
+
+.ex2 p {
+  background-color: aquamarine;
+}
+
+.ex2 p:first-child {
+  float: left;
+}
+
+.ex2 p:last-child {
+  float: right;
+}
+
+.ex2::after {
+  /* clearfix 부모의 높이를 위해 사용*/
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container1 {
+  margin: 30px auto;
+  width: 980px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  padding-top: 20px;
+}
+
+.container1 div {
+  height: 300px;
+  margin-bottom: 20px;
+  background-color: blueviolet;
+}
+
+.container1 .box {
+  width: 300px;
+}
+
+.container1 .wbox {
+  width: 460px;
+}
+
+.container1 .box1,
+.container1 .box2,
+.container1 .box3,
+.container1 .box4,
+.container1 .box5,
+.container1 .box6,
+.container1 .box8,
+.container1 .box9 {
+  float: left;
+  margin-left: 20px;
+}
+
+.container1 .box3 {
+  clear: both;
+}
+
+.container1 .box7 {
+  float: right;
+  margin-right: 20px;
+}
+
+.container1::after {
+  /* clearfix 부모의 높이를 위해 사용*/
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container2 {
+  width: 980px;
+  margin: 30px auto;
+  padding-top: 20px;
+  border: 1px solid rebeccapurple;
+}
+
+.container2 div {
+  width: 300px;
+  background-color: blue;
+}
+
+.container2 .box5 {
+  clear: both;
+}
+
+.container2 div:not(.box4 ~ div) {
+  color: aqua;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.container2 .box4 ~ div {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: aqua;
+}
+
+.container2 .box {
+  height: 300px;
+}
+
+.container2 .longbox {
+  height: 620px;
+}
+
+.container2::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container3 {
+  width: 980px;
+  margin: 20px auto;
+  padding-top: 20px;
+  border: 1px solid rebeccapurple;
+}
+
+.container3 div {
+  color: aliceblue;
+  background-color: aquamarine;
+  margin-bottom: 20px;
+}
+
+.container3 div:nth-child(odd) {
+  width: 300px;
+  height: 150px;
+  float: left;
+  margin-left: 20px;
+}
+
+.container3 div:nth-child(even) {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+}
+
+.container3 div:nth-child(3n + 4) {
+  clear: both;
+}
+
+.container3::after {
+  content: "";
+  display: block;
+  clear: both;
+}
