@@ -1,0 +1,19 @@
+.map {
+  width: 30vw;
+  height: 50vh;
+  box-sizing: border-box;
+  border: 10px solid rebeccapurple;
+}
+
+.youtube {
+  width: 800px;
+  height: 450px;
+  box-sizing: border-box;
+  border: 10px solid rebeccapurple;
+}
+/* 
+em, rem 차이 숙지하기
+부모가 높이속성이 정해져있어야 자식이 퍼센트 사용가능
+vh,vw는 브라우저의 출력기준 
+화면 높이는 vh로 잡는다.
+*/
