@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form요소</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>form요소</h1>
+      <p>웹브라우저를 이용해 사용자가 제어할 수 있는 ui</p>
+      <section>
+        <h2>요소의 개념</h2>
+        <ul>
+          <li>전송할 데이터의 범위</li>
+          <li>action속성 : 데이터를 전송할 주소</li>
+          <li>
+            method속성
+            <ul>
+              <li>get : 주소창을 이용해 텍스트로 데이터를 전송</li>
+              <li>post : 보안,바이너리 파일을 전송</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>form의 구획요소</h2>
+        <ul>
+          <li>fieldset : 관련된 데이터의 범위를 설정</li>
+          <li>legend : 필드셋 제목 설정</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>form의 접근성</h2>
+        <ul>
+          <li>laber요소 : for과id 속성으로 연결</li>
+          <li>title속성 : label텍스트를 대체할 수 있는 속성</li>
+        </ul>
+      </section>
+      <section>
+        <h2>input요소 type</h2>
+        <ul>
+          <li>text(default) :</li>
+          <li>password</li>
+          <li>email</li>
+          <li>tel</li>
+          <li>....</li>
+          <li>
+            size(글자크기), maxlength(글자수제한), min(최소수), max(최대수),
+            step(증가량) <br />
+            placeholder(입력양식에 대한 레퍼런스 제공), name(), cols(), rows()
+            <br />
+            accept(), required(유효성 검사)
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>입력양식의 종류</h2>
+        <ul>
+          <li>input</li>
+          <li>select</li>
+          <li>textarea</li>
+          <li>button</li>
+        </ul>
+      </section>
+      <hr />
+      <form action="">
+        <!-- 폼안에서 구역나누는 것을 필드셋사용 -->
+        <fieldset>
+          <legend>회원가입</legend>
+          <fieldset>
+            <legend>필수 입력 사항</legend>
+            <p>
+              <label for="userId">아이디</label>
+              <input required type="text" id="userId" />
+            </p>
+            <p>
+              <label for="password">패스워드</label>
+              <input required type="password" id="password" />
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>선택 입력 사항</legend>
+            <p>
+              <label>HP</label>
+              <!-- 디자인 구조때문에 label남김 -->
+              <label for="tel1" title="첫번째 전화번호 세자리 수"></label>
+              <input required type="tel" id="tel1" />-
+              <label for="tel1" title="두번째 전화번호 세자리 수"></label>
+              <input required type="tel" id="tel2" />-
+              <label for="tel1" title="세번째 전화번호 세자리 수"></label>
+              <input required type="tel" id="tel3" />
+            </p>
+            <p>
+              <label for="email">email</label>
+              <input required type="email" id="email" />
+            </p>
+            <p>
+              <label for="idNumber">좋아하는 숫자 한자리</label>
+              <input min="0" max="9" step="2" type="number" id="idNumber" />
+            </p>
+            <p>
+              <label for="range">좋아하는 숫자 두자리</label>
+              <input
+                type="range"
+                value="10"
+                min="10"
+                max="99"
+                step="2"
+                id="range"
+              />
+              <span class="range">10</span>
+            </p>
+            <p>
+              <label for="date">생년월일</label>
+              <input
+                type="date"
+                id="date"
+                value="2023-07-21"
+                min="2020-01-01"
+                max="2023-12-31"
+              />
+            </p>
+          </fieldset>
+        </fieldset>
+      </form>
+    </main>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

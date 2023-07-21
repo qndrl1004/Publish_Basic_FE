@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>position</h1>
+      <p>좌표를 이용해서 특정위치로 요소 배치</p>
+      <hr />
+      <section>
+        <h2>absolute</h2>
+        <ul>
+          <li>
+            abs 포지션이 적용되면 독립적인 위치를 가진다<br />
+            다른요소와 겹치고, 부모는 높이를 인식할수 없다
+          </li>
+          <li>
+            포지션이 적용되면 좌표를 설정할 수 있다 :
+            left,right,top,bottom(부모기준으로 움직인다,+와- 잘사용하기)
+          </li>
+          <li>
+            absolute의 좌표 기준점은 <em>position 가지고있는</em> 부모기준이다
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>fixed와 absolute의 차이</h2>
+        <ul>
+          <li>absolute는 문서기준 fixed는 브라우저와 붙어있다</li>
+          <li>
+            fixed의 좌표는 부모와 상관없다<br />
+            (단 부모요소에 transform속성이 적용되면 예외)
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>relative</h2>
+        <ul>
+          <li>absolute가 적용된 자식요소의 좌표 기준점이 된다.</li>
+          <li>
+            현재 레이아웃을 그대로 유지하면서 position속성을 적용할 수 있음
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <span class="box1">
+      <span>12345</span>
+    </span>
+
+    <div class="box2"></div>
+
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+        voluptatum corporis dolor nisi doloremque tempora sunt velit eius amet,
+        ullam sequi, quidem et. Sunt, fugiat? Earum sequi error dolores dolor?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim
+        dolores modi sapiente libero vero officiis mollitia vel aperiam
+        incidunt. Neque esse saepe porro magnam eligendi, doloribus aliquam sint
+        pariatur!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum tenetur
+        porro, nemo error eos cumque ab. Nesciunt, provident quisquam animi
+        harum eveniet voluptas iste ea, quibusdam quam hic debitis eius!
+      </p>
+    </div>
+    중요한내용<br />
+    중요한내용<br />
+    중요한내용<br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.box1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: calc(50% - 50px);
+  background-color: rgb(114, 114, 243);
+  transform: rotate(45deg);
+}
+
+/*
+과거
+top: 0;
+left: 50%;
+margin-left: -150px;
+*/
+
+.box1 span {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+}
+
+.box2 {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  left: calc(100% - 100px);
+  top: calc(50% - 50px);
+}
+
+.container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.container p {
+  position: relative;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.container p::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+}
