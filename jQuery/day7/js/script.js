@@ -99,9 +99,9 @@ $(function () {
 
 $(function () {
   /*
-    무효한값 : undefined, null, NaN, '', false, 0
-    부정값 : !(n)
-  */
+  무효한값 : undefined, null, NaN, '', false, 0
+  부정값 : !(n)
+*/
   let n = 1;
   if (n) {
     //n이 유효한 값인가?
@@ -109,4 +109,23 @@ $(function () {
   } else {
     console.log("거짓");
   }
+}); //ready
+
+$(function () {
+  $(".ex3").submit(function (e) {
+    e.preventDefault();
+    let num1 = parseInt($(".ex3 input[name='num1']").val());
+    let num2 = parseInt($(".ex3 input[name='num2']").val());
+    let op = $(".ex3 select option:selected").val();
+    let result = "";
+    if (op === "1") {
+      result = num1 + num2;
+    } else if (op === "2") {
+      result = num1 - num2;
+    } else {
+      result = num1 * num2;
+    }
+
+    $(".ex3 .result").html(result);
+  });
 }); //ready
