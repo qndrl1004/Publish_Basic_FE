@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계산기 app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./javascript/event.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>계산기</h1>
+      <div class="content">
+        <nav>
+          <button value=".percent" class="active">퍼센트계산기</button>
+          <button value=".bmi">비만도계산기</button>
+        </nav>
+        <section class="percent">
+          <form action="">
+            <p>
+              <input required type="number" class="num1" />의
+              <input required type="number" class="num2" />은 몇%?
+              <span>
+                <button type="submit">계산하기</button>
+                <button type="reset">초기화</button>
+              </span>
+            </p>
+          </form>
+          <p class="result_percent">결과</p>
+          <p>간단한 퍼센트 계산을 위한 웹 계산기입니다.</p>
+        </section>
+        <section class="bmi">
+          <form action="">
+            <p>
+              <label
+                ><input type="radio" name="gender" value="men" />남자</label
+              >
+              <label
+                ><input type="radio" name="gender" value="fmen" />여자</label
+              >
+            </p>
+            <p>
+              신장
+              <input required type="number" class="cm" placeholder="cm단위" />
+              체중
+              <input required type="number" class="kg" placeholder="kg단위" />
+              <span>
+                <button type="submit">계산하기</button>
+                <button type="reset">초기화</button>
+              </span>
+            </p>
+          </form>
+          <div class="result_bmi">
+            <p>나의 bmi 수치 : 결과</p>
+            <div class="bar">
+              <span>마름</span>
+              <span>저체중</span>
+              <span>적정</span>
+              <span>과체중</span>
+              <span>비만</span>
+            </div>
+          </div>
+          <a href="https://terms.naver.com/" target="_blank"
+            >체중조절 다이어트 정보 더보기</a
+          >
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
