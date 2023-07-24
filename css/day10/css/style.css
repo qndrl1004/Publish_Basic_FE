@@ -1,0 +1,51 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.container div {
+  position: sticky;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.container div span {
+  width: 100px;
+  height: 100px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: yellow;
+}
+
+.ex1 {
+  border: 1px solid black;
+}
+.ex1 h2 {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.ex1 section {
+  background-color: antiquewhite;
+}
+
+.ex1 section h3 {
+  position: sticky;
+  top: 50px;
+  background-color: green;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
