@@ -91,6 +91,13 @@
             <p>
               <label>HP</label>
               <!-- 디자인 구조때문에 label남김 -->
+              <select name="" id="">
+                <option label="">통신사 선택</option>
+                <option label="lg">lg</option>
+                <option label="kt">kt</option>
+                <option label="skt">skt</option>
+              </select>
+              <!-- option 에는 label속성을 사용 가능하다. -->
               <label for="tel1" title="첫번째 전화번호 세자리 수"></label>
               <input required type="tel" id="tel1" />-
               <label for="tel1" title="두번째 전화번호 세자리 수"></label>
@@ -128,6 +135,48 @@
                 max="2023-12-31"
               />
             </p>
+            <p>
+              <label for="file">파일업로드</label>
+              <input
+                type="file"
+                id="file"
+                multiple
+                accept=".jpg, .png, .text, img/*, video/*"
+              />
+            </p>
+            <!-- multiple은 다중선택 -->
+            <p>
+              <label for="">성별</label>
+              <label for="radio1" title="men">
+                <input id="radio1" type="radio" name="gender" />남
+              </label>
+              <label for="radio2" title="femeil">
+                <input id="radio2" type="radio" name="gender" />여
+              </label>
+            </p>
+            <p>
+              <label for="">취미</label>
+              <label for="c1" title="hobby">
+                <input type="checkbox" name="check" id="c1" />movie
+              </label>
+              <label for="c2" title="hobby">
+                <input type="checkbox" name="check" id="c2" />music
+              </label>
+              <label for="c3" title="hobby">
+                <input type="checkbox" name="check" id="c3" />fight
+              </label>
+            </p>
+            <!-- name은 하나이상체크 requierd는 전부체크해야한다. -->
+            <p>
+              <label for="textarea">하고싶은말</label>
+              <textarea name="" id="textarea" cols="50" rows="10"></textarea>
+            </p>
+            <p>
+              <button type="submit">전송</button>
+              <button type="reset">초기화</button>
+              <button type="button">모습만</button>
+            </p>
+            <!-- form안에서 button은 submit  -->
           </fieldset>
         </fieldset>
       </form>
