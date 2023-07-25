@@ -1,0 +1,171 @@
+.ex1 {
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px; 
+  grid-template-columns: repeat(3, auto);
+  */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.ex1 .box1 {
+  grid-column: 1 / 3;
+  background: plum;
+}
+/* 
+1/3 : 1이상 3미만 
+1 / span 2 : 같은 의미
+*/
+.ex1 .box2 {
+  grid-column: 3;
+  grid-row: 1/3;
+  /* 
+  grid-area: 1/3/3/4 
+  grid-area: 1/3/span 2/span 1
+  */
+  background: greenyellow;
+}
+
+.ex1 .box3 {
+  grid-column: 2/4;
+  grid-row: 3;
+  background: skyblue;
+}
+
+.ex1 .box4 {
+  grid-column: 1;
+  grid-row: 2/4;
+  background: yellow;
+}
+
+.ex1 .box5 {
+  grid-column: 2;
+  grid-row: 2;
+  background: blanchedalmond;
+}
+
+.ex2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.ex2 .box1 {
+  grid-column: 1;
+  background: plum;
+}
+
+.ex2 .box2 {
+  grid-column: 2;
+  background: greenyellow;
+}
+
+.ex2 .box3 {
+  grid-column: 3;
+  grid-row: 1/3;
+  background: skyblue;
+}
+
+.ex2 .box4 {
+  grid-column: 2;
+  grid-row: 2/4;
+  background: yellow;
+}
+
+.ex2 .box5 {
+  grid-column: 1;
+  grid-row: 2;
+  background: blanchedalmond;
+}
+
+.ex3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.ex3 .box1 {
+  grid-column: 1;
+  background: plum;
+}
+
+.ex3 .box2 {
+  grid-column: 2;
+  background: greenyellow;
+}
+
+.ex3 .box3 {
+  grid-column: 3;
+  grid-row: 1/3;
+  background: skyblue;
+}
+
+.ex3 .box4 {
+  grid-column: 4;
+  grid-row: 1/3;
+  background: yellow;
+}
+
+.ex3 .box5 {
+  grid-column: 1;
+  grid-row: 2;
+  background: blanchedalmond;
+}
+
+.ex3 .box6 {
+  grid-column: 2;
+  grid-row: 2;
+  background: peru;
+}
+
+.ex4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.ex4 .box1 {
+  grid-column: 1;
+  background: plum;
+}
+
+.ex4 .box2 {
+  grid-column: 2;
+  background: greenyellow;
+}
+
+.ex4 .box3 {
+  grid-column: 3;
+  grid-row: 1/3;
+  background: skyblue;
+}
+
+.ex4 .box4 {
+  grid-column: 4;
+  grid-row: 1/3;
+  background: yellow;
+}
+
+.ex4 .box5 {
+  grid-column: 2;
+  grid-row: 2;
+  background: peru;
+}
+
+.ex4 .box6 {
+  grid-column: 1;
+  grid-row: 2;
+  background: blanchedalmond;
+}

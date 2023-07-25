@@ -3,11 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>table</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./js/script.js" />
   </head>
   <body>
     <main>
-      <h1></h1>
+      <h1>table</h1>
+      <ul>
+        <li>데이터베이스(관계형) 출력 목적</li>
+        <li>table은 block과 유사함</li>
+        <li>tr마다 td의 갯수는 동일해야 함</li>
+        <li>ceil(td)의 병합(colspan,rowspan)가능하다</li>
+        <li>필드셋이름은 th와 scope속성을 이용</li>
+        <li>테이블은 thead(필드셋 영역),tbody(데이터영역),tfoot(보조영역)</li>
+      </ul>
     </main>
+    <hr />
+    <table class="ex1">
+      <tr>
+        <td colspan="2">1-1</td>
+        <!-- <td>1-2</td> -->
+        <td rowspan="2">1-3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">2-1</td>
+        <td>2-2</td>
+        <!-- <td>2-3</td> -->
+      </tr>
+      <tr>
+        <!-- <td>3-1</td> -->
+        <td colspan="2">3-2</td>
+        <!-- <td>3-3</td> -->
+      </tr>
+    </table>
+    <hr />
+    <table class="ex2">
+      <caption>
+        학적부
+      </caption>
+      <thead>
+        <tr>
+          <th scope="row">학년</th>
+          <th scope="row">이름</th>
+          <th scope="row">종족</th>
+          <th scope="row">성적</th>
+        </tr>
+      </thead>
+      <!-- th에는 시멘틱요소를 위해서 사용해야한다. -->
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>창윤이</td>
+          <td>돼지</td>
+          <td>S</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>기웅이</td>
+          <td>뚜비</td>
+          <td>B</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">2023년 7월 25일자 자료</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <table class="ex3">
+      <caption>
+        교육시간표
+      </caption>
+      <thead>
+        <tr>
+          <th>요일</th>
+          <th>1교시</th>
+          <th>2교시</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>월</td>
+          <td>영어</td>
+          <td>국어</td>
+        </tr>
+        <tr>
+          <td>화</td>
+          <td>수학</td>
+          <td>체육</td>
+        </tr>
+        <tr>
+          <td>수</td>
+          <td>기가</td>
+          <td>국어</td>
+        </tr>
+        <tr>
+          <td>목</td>
+          <td>수학</td>
+          <td>국어</td>
+        </tr>
+        <tr>
+          <td>금</td>
+          <td>체육</td>
+          <td>국어</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
   </body>
 </html>

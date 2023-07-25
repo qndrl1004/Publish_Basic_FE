@@ -1,0 +1,37 @@
+table {
+  border-collapse: collapse; /*td간의 여백 없애기*/
+  table-layout: fixed; /*table와 td의 크기를 고정*/
+}
+/* table만 collapse가능하다. */
+
+table.ex1 {
+  width: 150px;
+}
+/* 넓이는 테이블에 주는게 맞다(td)의 크기는 table을 제어할 수 없다. */
+
+table.ex1 td {
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+/* td에는 넓이를 %로 준다. */
+
+table.ex2 {
+  width: 400px;
+}
+
+table.ex3 {
+  width: 400px;
+}
+
+table.ex2 td,
+table.ex2 th,
+table.ex3 td,
+table.ex3 th {
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
