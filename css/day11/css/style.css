@@ -161,11 +161,11 @@
 .ex4 .box5 {
   grid-column: 2;
   grid-row: 2;
-  background: peru;
+  background: blanchedalmond;
 }
 
 .ex4 .box6 {
   grid-column: 1;
   grid-row: 2;
-  background: blanchedalmond;
+  background: peru;
 }
