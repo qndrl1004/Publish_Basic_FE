@@ -1,0 +1,165 @@
+.ex1,
+.ex2 {
+  width: 500px;
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid plum;
+}
+
+.ex1 span,
+.ex2 span {
+  background: pink;
+  border: 1px solid black;
+}
+
+.ex1 {
+  display: flex;
+  /* flex-direction: row; */
+  flex-direction: row-reverse;
+}
+
+.ex2 {
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
+}
+
+.ex3,
+.ex4 {
+  margin: 30px auto;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid pink;
+}
+
+.ex3 div,
+.ex4 span {
+  background: yellowgreen;
+  border: 1px solid green;
+}
+
+.ex3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ex4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ex5,
+.ex6,
+.ex7,
+.ex8,
+.ex9 {
+  margin: 30px auto;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid pink;
+}
+
+.ex5 div,
+.ex6 div,
+.ex7 div,
+.ex8 div {
+  background: yellowgreen;
+  border: 1px solid green;
+}
+
+.ex5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ex6 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ex7 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.ex8 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: flex-first;
+}
+
+.ex9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ex10 {
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+  margin: 0 auto;
+  width: 200px;
+  border: 1px solid red;
+}
+/* 
+wrap은 축이 2개이상이 필요할 때
+*/
+
+.ex10 div {
+  width: 90px;
+  height: 90px;
+  background: blue;
+  margin: 5px;
+}
+
+.ex11,
+.ex12 {
+  display: flex;
+  width: 400px;
+  margin: 30px 0;
+  border: 1px solid black;
+}
+
+.ex11 div {
+  background: aquamarine;
+  border: 1px solid yellow;
+  flex-grow: 1;
+}
+/* 
+grow는 with사용 불가
+*/
+
+.ex12 div {
+  width: 150px;
+  border: 1px solid salmon;
+  flex-shrink: 1;
+}
+
+.ex13 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid salmon;
+}
+
+.ex13 div {
+  flex-grow: 1;
+  background: yellow;
+  border: 1px solid black;
+}

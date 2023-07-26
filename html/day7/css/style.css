@@ -35,3 +35,27 @@ table.ex3 th {
   box-sizing: border-box;
   border: 2px solid black;
 }
+
+.ex4 {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.ex4 caption {
+  margin-bottom: 15px;
+}
+
+.ex4 td,
+.ex4 th {
+  border: 1px solid black;
+  height: 30px;
+  text-align: center;
+}
+
+.ex4 thead {
+  background: green;
+}
+
+.ex4 tbody th {
+  background: darkorange;
+}

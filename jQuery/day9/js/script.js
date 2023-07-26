@@ -23,6 +23,7 @@ $(function () {
   fnSetNum(1);
   fnSetNum(2);
   fnSetNum(3);
+
   $(".ex3 button").click(function (e) {
     e.preventDefault();
     let score = 0;
@@ -33,6 +34,7 @@ $(function () {
       let num3 = parseInt($(`.ex3 .q${t} input:nth-of-type(3)`).val());
       return num1 + num2 === num3 ? ++score : (score += 0);
     };
+
     fncheckResult(1);
     fncheckResult(2);
     fncheckResult(3);
