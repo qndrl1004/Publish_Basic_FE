@@ -1,0 +1,40 @@
+.calc {
+  width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: paleturquoise;
+  font-size: 20px;
+}
+
+.calc .output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: white;
+  border: 2px solid plum;
+}
+
+.calc .btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calc .btns button {
+  width: 25%;
+  margin-left: -1px;
+  margin-top: -1px;
+  height: 50px;
+  background: pink;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.calc .btns button:hover {
+  background-color: greenyellow;
+  color: white;
+}
