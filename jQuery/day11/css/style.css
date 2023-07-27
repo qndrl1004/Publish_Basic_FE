@@ -1,0 +1,82 @@
+.ex2 p.result {
+  display: none;
+}
+
+.ex4 .box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transition: all 1s;
+}
+
+.ex7 button {
+  display: none;
+}
+
+.ex8 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 30px auto;
+  border: 1px solid salmon;
+}
+
+.ex8 img {
+  width: 200px;
+  height: 200px;
+}
+
+.casousel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+}
+
+.casousel img {
+  position: absolute;
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+
+.casousel .img1 {
+  display: block;
+}
+
+.casousel .i {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 125px;
+}
+
+.casousel .prev {
+  left: 10px;
+}
+
+.casousel .next {
+  right: 10px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.btns button {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btns button.active {
+  background: black;
+}
