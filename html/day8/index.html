@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지켜야할 문법</title>
+  </head>
+  <body>
+    <main>
+      <h1>문법</h1>
+      <section>
+        <h2>필수문법</h2>
+        <ul>
+          <li>h1~h6,p 요소는 블럭요소를 자식으로 허락하지 않는다.</li>
+          <!-- 예시 <h1><p></p></h1> -->
+          <li>
+            inline,inline-block자식으로 block요소가 자식으로 불가능하다.
+            html요소만 해당 (a요소는 블럭요소를 자식으로 허락함)
+          </li>
+          <!-- 예시 <span><p></p></span> -->
+          <li>상호작용 요소간에는 부모자식노드가 허락되지않는다</li>
+          <!-- 예시 <a><button></button></a> -->
+          <li>ul,ol의 자식으로는 li만 허락된다.</li>
+          <!-- 예시 <ul><div></div></ul> -->
+          <li>dl의 자식으로는 dt,dd만 허락된다.</li>
+          <li>table은 thead,tbody 허락된다.</li>
+          <!-- 반드시 지켜야함 -->
+        </ul>
+      </section>
+      <section>
+        <h2>권장사항</h2>
+        <ul>
+          <li>웹사이트의 페이지마다 title제목은 다르게하길 권장</li>
+          <li>웹문서는 h1과 main 요소를 한개를 포함하길 권장</li>
+          <li>h1~h6은 글자를 포함하길 권장</li>
+          <li>main,section,article요소는 제목요소 한개이상을 포함하길 권장</li>
+          <li>입력양식은 레이블요소와 참조하길 권장</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
