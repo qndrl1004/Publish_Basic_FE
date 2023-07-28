@@ -1,0 +1,143 @@
+.ex1 div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  background: black;
+  color: aliceblue;
+}
+
+.ex1 .box1 {
+  /* transition: background 1s, color 1s; */
+  transition: all 1s;
+}
+
+.ex1 .box1:hover {
+  background: red;
+  transition: background 1s;
+  color: yellow;
+}
+
+.ex1 .box2 {
+  transition: all 1s;
+  text-align: center;
+  line-height: 100px;
+}
+
+.ex1 .box2.active {
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.ex1 .box3 {
+  position: relative;
+}
+
+.ex1 .box3 div {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: greenyellow;
+  transition: all 3s;
+}
+
+.ex1 .box3:hover div {
+  left: 0;
+  top: 80px;
+}
+
+.ex1 .box4 {
+  position: relative;
+}
+
+.ex1 .box4 div {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: skyblue;
+  transition: left 1s, top 1s;
+  transition-delay: 1s, 0s;
+  transition-timing-function: ease-in;
+}
+
+.ex1 .box4:hover div {
+  left: 0px;
+  top: 80px;
+  transition-delay: 0s, 1s;
+}
+
+.ex2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: blueviolet;
+}
+
+.ex2 div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: greenyellow;
+}
+
+.ex2:hover div {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  /* animation:move 3s infite linear,,,등 */
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 150px;
+    top: 0;
+  }
+  50% {
+    left: 150px;
+    top: 150px;
+  }
+  75% {
+    left: 0;
+    top: 150px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.ex3 {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background: red;
+}
+
+.ex3:hover {
+  animation: jello 1s 3;
+}
+
+.ex4 {
+  height: 300px;
+  background-image: url(../img/img5.JPG);
+  animation: bg 10s infinite linear;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}

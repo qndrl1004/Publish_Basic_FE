@@ -1,0 +1,79 @@
+.ex1 {
+  text-align: center;
+}
+
+.ex1 div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: skyblue;
+  text-align: center;
+  line-height: 100px;
+  transition: all 1s;
+}
+
+.ex1 div:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.ex1 img:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.ex2 {
+  border: 1px solid black;
+}
+
+.ex2 p {
+  margin: 0 auto;
+  width: 50%;
+  background: yellow;
+  transform: translate(0, 110%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.ex2:hover p {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.ex3 {
+  position: relative;
+  background: whitesmoke;
+}
+
+.ex3 div {
+  position: absolute;
+  background: yellowgreen;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ex4 {
+  text-align: center;
+}
+
+.ex4 div {
+  display: inline-block;
+  position: relative;
+  padding: 30px 100px;
+  background: silver;
+  border: 1px solid black;
+  color: red;
+  transform: skewX(-45deg);
+}
+
+.ex4 div:hover {
+  background: red;
+  color: white;
+  z-index: 1;
+  transition: all 2s;
+  transform: scale(1.5) skewX(-45deg);
+}
+
+.ex4 div span {
+  display: block;
+  transform: skewX(45deg);
+}
