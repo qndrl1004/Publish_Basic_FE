@@ -132,3 +132,65 @@ $(function () {
     $(".ex8 .result").text(score);
   });
 }); //ready8
+
+$(function () {
+  $(".ex9 button").click(function () {
+    let result = "";
+    $(".ex9 input:checked").each(function () {
+      result += $(this).val() + ",";
+    });
+    $(".ex9 .result").text(result);
+  });
+});
+
+$(function () {
+  let point = 0;
+  $(".ex10 button").click(function () {
+    $(".ex10 .q").each(function () {
+      let result = 0;
+      $(this)
+        .children("input:checked")
+        .each(function () {
+          if ($(this).val() === "정답") {
+            result++;
+          } else {
+            result--;
+          }
+        });
+      let total = parseInt($(this).attr("data-cnt"));
+      if (result === total) {
+        point++;
+      }
+    });
+    $(".ex10 .result").text(point);
+  });
+
+  $(function () {
+    $(".ex11 button").click(function () {
+      $(".ex11 .q").each(function () {
+        let result = "";
+        $(this)
+          .children("input:checked")
+          .each(function () {
+            result += $(this).val();
+          });
+        $(this).children(".result").text(result);
+      });
+    });
+  }); //ready11
+
+  $(function () {
+    $(".ex12 > div").mouseenter(function () {
+      $(this)
+        .children("div")
+        .each(function () {
+          let bg = $(this).text();
+          $(this).css({ background: bg });
+        });
+    });
+
+    $(".ex12 > div").mouseleave(function () {
+      $(this).children("div").css({ background: "none" });
+    });
+  }); //ready12
+});
