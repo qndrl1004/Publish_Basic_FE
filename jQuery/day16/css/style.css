@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.dummy {
+  width: 3000px;
+  height: 3000px;
+}
+
+.banner1 {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  right: 10px;
+  top: 0;
+  background: pink;
+}
+
+.banner2 {
+  position: absolute;
+  left: 10px;
+  width: 100px;
+  height: 200px;
+  right: 10px;
+  top: 0;
+  background: pink;
+}
+
+.banner3 {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  margin: auto 50%;
+  top: 0;
+  background: pink;
+}
