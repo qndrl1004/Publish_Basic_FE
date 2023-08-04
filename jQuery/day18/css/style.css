@@ -1,0 +1,65 @@
+body {
+  overflow-x: hidden;
+}
+
+.line {
+  position: fixed;
+  border: 1px solid red;
+  width: 100%;
+  top: 50%;
+}
+
+.ex1,
+.ex2,
+.ex3 {
+  width: 1000px;
+  margin: 1000px auto;
+  border: 1px solid black;
+}
+
+.ex1 div,
+.ex2 div,
+.ex3 div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 0 auto;
+}
+
+.ex4 {
+  width: 200px;
+  height: 200px;
+  margin: 1000px auto;
+  background: black;
+}
+
+.ex5 {
+  width: 200px;
+  height: 200px;
+  margin: 1000px auto;
+  background: yellowgreen;
+  border-radius: 0;
+}
+
+.ex6 {
+  width: 200px;
+  height: 200px;
+  margin: 1000px auto;
+  background: yellow;
+  border-radius: 0;
+}
+
+.ex7 {
+  width: 200px;
+  margin: 1000px auto;
+}
+
+.ex7 div {
+  width: 200px;
+  height: 200px;
+  background: pink;
+  margin: 100px 0;
+}
+/* 
+  동글,투명도1,스캐일 커짐
+*/
