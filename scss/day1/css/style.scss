@@ -1,0 +1,65 @@
+//주석
+/*주석*/
+//선택자
+
+@use "./mixin" as m;
+
+.ex1,
+.ex2 {
+  width: 800px;
+  padding: 10px;
+  border: 1px solid #666;
+  margin: 0 auto;
+  text-align: center;
+
+  > div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: black;
+    div {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      &:hover {
+        background: black;
+      }
+    }
+  }
+}
+
+//변수와 보간법
+$w: 150px;
+$h: 150px;
+
+.ex3 {
+  width: $w;
+  height: $h;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.ex4 {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid black;
+
+  @media #{m.$min1} {
+    background: yellow;
+  }
+  @media #{m.$md1} {
+    background: greenyellow;
+  }
+  @media #{m.$max1} {
+    background: plum;
+  }
+}
+
+/*
+mixin
+*/
+
+.ex5 button {
+  @include m.btn(blue);
+}

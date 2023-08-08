@@ -1,0 +1,15 @@
+// -사용은 항상 서로 뛴다
+$min1: "screen and (min-width: 1000px)";
+$md1: "screen and (min-width: 500px) and (max-width: 1000px)";
+$max1: "screen and (max-width: 500px)";
+
+@mixin btn($bg) {
+  background: none;
+  border: none;
+  padding: 10px 30px;
+  background: #000;
+  color: white;
+  &:hover {
+    background: $bg;
+  }
+}
