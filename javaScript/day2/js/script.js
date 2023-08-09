@@ -55,14 +55,16 @@
 
 {
   document.querySelectorAll(".ex6 input").forEach((e) => {
-    let ren = parseInt(Math.floor(Math.random() * 10));
-    e.value = ren;
+    e.value = parseInt(Math.floor(Math.random() * 10));
   });
+
   document.querySelector(".ex6 button").addEventListener("click", () => {
-    let sum = 0;
-    document.querySelectorAll(".ex6 input").forEach((e) => {
-      sum += parseInt(e.value);
+    document.querySelectorAll(".ex6 .numbers").forEach((e) => {
+      let sum = 0;
+      e.querySelectorAll("input").forEach((e) => {
+        sum += parseInt(e.value);
+      });
+      e.querySelector("p").innerText = sum;
     });
-    document.querySelector(".ex6 .result").innerHTML = sum;
   });
 }

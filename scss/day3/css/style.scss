@@ -1,0 +1,156 @@
+.card-wrap {
+  perspective: 700px;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  &:hover .card {
+    transform: rotateY(180deg);
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 3em;
+      line-height: 300px;
+      backface-visibility: hidden;
+      &.front {
+        background: yellow;
+      }
+      &.back {
+        transform: rotateY(180deg);
+        background: red;
+      }
+    }
+  }
+}
+
+.door-container {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  background: black;
+  color: #fff;
+  margin: 800px auto;
+  perspective: 800px;
+  p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .door {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    &.left {
+      transform-origin: left center;
+      transform: rotateY(-180deg);
+    }
+    &.right {
+      transform-origin: right center;
+      transform: rotateY(180deg);
+    }
+    div {
+      //pront,back둘다
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 300px;
+      font-size: 3em;
+      backface-visibility: hidden;
+      &.front {
+        background: blue;
+      }
+      &.back {
+        transform: rotateY(180deg);
+        background: red;
+      }
+    }
+  }
+}
+
+.btns {
+  text-align: center;
+}
+
+.cube-container {
+  width: 200px;
+  height: 300px;
+  margin: 200px auto;
+  perspective: 3000px;
+  transition: all 1s linear;
+  .cube {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+    &.left {
+      transform: rotateY(90deg);
+    }
+    &.right {
+      transform: rotateY(-90deg);
+    }
+    &.front {
+    }
+    &.back {
+      transform: rotateY(180deg);
+    }
+    &.top {
+      transform: rotateX(-90deg);
+    }
+    &.bottom {
+      transform: rotateX(90deg);
+    }
+    div {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      line-height: 300px;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 60px;
+      font-weight: bold;
+      text-align: center;
+      &.front {
+        background: rgba(purple, 0.5);
+        transform: rotateY(360deg) translateZ(150px);
+      }
+      &.back {
+        background: rgba(red, 0.5);
+        transform: rotateY(-180deg) translateZ(150px);
+      }
+      &.left {
+        background: rgba(green, 0.5);
+        transform: rotateY(-90deg) translateZ(150px);
+      }
+      &.right {
+        background: rgba(yellow, 0.5);
+        transform: rotateY(90deg) translateZ(150px);
+      }
+      &.top {
+        background: rgba(plum, 0.5);
+        transform: rotateX(90deg) translateZ(150px);
+      }
+      &.bottom {
+        background: rgba(skyblue, 0.5);
+        transform: rotateX(270deg) translateZ(150px);
+      }
+    }
+  }
+}

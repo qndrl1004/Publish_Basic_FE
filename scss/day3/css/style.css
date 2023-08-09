@@ -1,0 +1,153 @@
+.card-wrap {
+  perspective: 700px;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+}
+.card-wrap:hover .card {
+  transform: rotateY(180deg);
+}
+.card-wrap .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.card-wrap .card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  line-height: 300px;
+  backface-visibility: hidden;
+}
+.card-wrap .card div.front {
+  background: yellow;
+}
+.card-wrap .card div.back {
+  transform: rotateY(180deg);
+  background: red;
+}
+
+.door-container {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  background: black;
+  color: #fff;
+  margin: 800px auto;
+  perspective: 800px;
+}
+.door-container p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.door-container .door {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+.door-container .door.left {
+  transform-origin: left center;
+  transform: rotateY(-180deg);
+}
+.door-container .door.right {
+  transform-origin: right center;
+  transform: rotateY(180deg);
+}
+.door-container .door div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 300px;
+  font-size: 3em;
+  backface-visibility: hidden;
+}
+.door-container .door div.front {
+  background: blue;
+}
+.door-container .door div.back {
+  transform: rotateY(180deg);
+  background: red;
+}
+
+.btns {
+  text-align: center;
+}
+
+.cube-container {
+  width: 200px;
+  height: 300px;
+  margin: 200px auto;
+  perspective: 3000px;
+  transition: all 1s linear;
+}
+.cube-container .cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: all 1s linear;
+}
+.cube-container .cube.left {
+  transform: rotateY(90deg);
+}
+.cube-container .cube.right {
+  transform: rotateY(-90deg);
+}
+.cube-container .cube.back {
+  transform: rotateY(180deg);
+}
+.cube-container .cube.top {
+  transform: rotateX(-90deg);
+}
+.cube-container .cube.bottom {
+  transform: rotateX(90deg);
+}
+.cube-container .cube div {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+.cube-container .cube div.front {
+  background: rgba(128, 0, 128, 0.5);
+  transform: rotateY(360deg) translateZ(150px);
+}
+.cube-container .cube div.back {
+  background: rgba(255, 0, 0, 0.5);
+  transform: rotateY(-180deg) translateZ(150px);
+}
+.cube-container .cube div.left {
+  background: rgba(0, 128, 0, 0.5);
+  transform: rotateY(-90deg) translateZ(150px);
+}
+.cube-container .cube div.right {
+  background: rgba(255, 255, 0, 0.5);
+  transform: rotateY(90deg) translateZ(150px);
+}
+.cube-container .cube div.top {
+  background: rgba(221, 160, 221, 0.5);
+  transform: rotateX(90deg) translateZ(150px);
+}
+.cube-container .cube div.bottom {
+  background: rgba(135, 206, 235, 0.5);
+  transform: rotateX(270deg) translateZ(150px);
+}/*# sourceMappingURL=style.css.map */
