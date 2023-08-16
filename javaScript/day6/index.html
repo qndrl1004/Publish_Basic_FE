@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="http://code.jquery.com/jquery-latest.js"></script> 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script defer src="./js/new.js"></script>
-    <link rel="stylesheet" href="./css/new.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/new.css" />
+  </head>
+  <body>
     <h1>object (객체)</h1>
     <ul>
-        <li>가독성, 관리, 호환성</li>
-        <li>
-            객체 생성과 키에 접근<br>
-            키의 형태는 문자열과 숫자도 허락
-        </li>
-        <li>
-            객체의 computed 방식의 키 호출 예시
-        </li>
-        <pre>
+      <li>가독성, 관리, 호환성</li>
+      <li>
+        객체 생성과 키에 접근<br />
+        키의 형태는 문자열과 숫자도 허락
+      </li>
+      <li>객체의 computed 방식의 키 호출 예시</li>
+      <pre>
             {
                 let obj = {
                     1:'one',
@@ -33,14 +31,30 @@
                 console.log(obj[n]);//one
                 console.log(obj['n']);//'n'
             }
-        </pre>
+        </pre
+      >
     </ul>
-    <hr>
+    <hr />
     <form class="ex1">
-        <p>1. 알파벳을 입력후 버튼을 누르면, 알파벡 별 글자수가 출력되요</p>
-        <p><input type="text"></p>
+      <p>1. 알파벳을 입력후 버튼을 누르면, 알파벡 별 글자수가 출력되요</p>
+      <p><input type="text" /></p>
     </form>
-
-        
-</body>
+    <hr />
+    <div class="ex2">
+      <p>2. 버튼을 누르면 명단이 출력되요.</p>
+      <button>명단출력</button>
+      <div class="result">결과</div>
+    </div>
+    <div class="ex3">
+      <p>3. 버튼을 누르면 테이블이 출력되요.</p>
+      <p><button>명단출력</button></p>
+      <div class="result"></div>
+    </div>
+    <div class="ex4">
+      <p>4. 제시되는 단어에 해당하는 숫자를 고르세요</p>
+      <div class="questions"></div>
+      <p><button>명단출력</button></p>
+      <p class="result">점수</p>
+    </div>
+  </body>
 </html>
