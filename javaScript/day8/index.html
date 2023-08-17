@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map과 깊은복사,얕은복사</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script defer src="./js/new.js"></script>
+    <link rel="stylesheet" href="./css/new.css" />
+  </head>
+  <body>
+    <div class="ex1">
+      <p>1. 1~10까지 짝홀수 출력하기</p>
+      <p>
+        <button class="even">짝수</button>
+        <button class="odd">홀수</button>
+      </p>
+      <p class="result">결과</p>
+    </div>
+    <hr />
+    <div class="ex2">
+      <p>2. 숫자를 입력한 후 정렬하세요</p>
+      <p><input type="text" placeholder="여백없이 쉼표로 구분입력" /></p>
+      <p>
+        <button class="asc">오름차순</button>
+        <button class="desc">내림차순</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <hr />
+    <div class="ex3">
+      <p>3. 숫자나 글자를 정렬하세요</p>
+      <input type="text" placeholder="여백없이 입력" />
+      <p>
+        <button class="asc">오름차순</button>
+        <button class="desc">내림차순</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <hr />
+    <form class="ex4">
+      <p>4. 이름과 나이를 입력후 명단에 추가하세요</p>
+      <p>이름 : <input required type="text" /></p>
+      <p>나이 : <input required type="number" /></p>
+      <p>
+        성별 : <input type="radio" name="ex4" value="남" required />남
+        <input type="radio" name="ex4" value="여" required />여
+      </p>
+      <p>
+        <button class="add">추가하기</button>
+        <button class="name">이름순정렬</button>
+        <button class="age">나이순정렬</button>
+        <button class="men">남자명단</button>
+        <button class="women">여자명단</button>
+      </p>
+      <p class="result"></p>
+    </form>
+  </body>
+</html>
