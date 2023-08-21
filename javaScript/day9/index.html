@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="./js/script.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <div class="ex1">
-    <p>1. 1~10으로 구성된 배열중에 짝홀수 출력하기</p>
-    <p>
-      <button class="even">짝수</button>
-      <button class="odd">홀수</button>
-    </p>
-    <p class="result"></p>
-  </div><!-- ex1 -->
-  <hr>
-  <div class="ex2">
-    <p>2. 숫자를 입력한 후 정렬하세요</p>
-    <p><input type="text" placeholder="여백없이 쉼표로 구분입력"></p>
-    <p>
-      <button class="asc">오름차순</button>
-      <button class="desc">내림차순</button>
-    </p>
-    <p class="result"></p>
-  </div><!-- ex2 -->
-  <hr>
-  <div class="ex3">
-    <p>3. 숫자나 글자를 입력한 후 정렬하세요</p>
-    <p><input type="text" placeholder="여백없이입력"></p>
-    <p>
-      <button class="asc">오름차순</button>
-      <button class="desc">내림차순</button>
-    </p>
-    <p class="result"></p>
-  </div><!-- ex2 -->
-  <hr>
-  <form class="ex4">
-    <p>4. 이름과 나이 성별을 입력후 명단에 추가하세요</p>
-    <p>이름 : <input required type="text" class="input-name"></p>
-    <p>나이 : <input required type="number"></p>
-    <p>
-      성별 :
-      <input required value="남" type="radio" name="ex4"> 남
-      <input required value="녀" type="radio" name="ex4"> 녀
-    </p>
-    <p>
-      <button class="add" >추가하기</button>
-      <button class="name" type="button">이름순정렬</button>
-      <button class="age" type="button">나이순정렬</button>
-      <button class="man" type="button">남자명단</button>
-      <button class="woman" type="button">여자명단</button>
-    </p>
-    <p>
-      이름검색 : <input type="text" class="search">
-    </p>
-    <ul class="result"></ul>
-  </form>
-  <hr>
-  <form class="ex5">
-    <p>5. todoApp</p>
-    <p><input type="text" placeholder="일정이름을 입력하세요"></p>
-    <p><input type="date" ></p>
-    <p><input type="time"></p>
-    <p><button>일정추가하기</button></p>
-    <p>
-      <button type="button">일정명으로정렬</button> 
-      <button type="button">날짜순정렬</button>
-    </p>
-    <p><input type="text" placeholder="일정명을 검색하세요"></p>
-    <ul class="result"></ul>
-  </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/new.css" />
+    <script defer src="./js/new.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ex1">
+      <p>1. 1~10으로 구성된 배열중에 짝홀수 출력하기</p>
+      <p>
+        <button class="even">짝수</button>
+        <button class="odd">홀수</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <!-- ex1 -->
+    <hr />
+    <div class="ex2">
+      <p>2. 숫자를 입력한 후 정렬하세요</p>
+      <p><input type="text" placeholder="여백없이 쉼표로 구분입력" /></p>
+      <p>
+        <button class="asc">오름차순</button>
+        <button class="desc">내림차순</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <!-- ex2 -->
+    <hr />
+    <div class="ex3">
+      <p>3. 숫자나 글자를 입력한 후 정렬하세요</p>
+      <p><input type="text" placeholder="여백없이입력" /></p>
+      <p>
+        <button class="asc">오름차순</button>
+        <button class="desc">내림차순</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <!-- ex2 -->
+    <hr />
+    <form class="ex4">
+      <p>4. 이름과 나이 성별을 입력후 명단에 추가하세요</p>
+      <p>이름 : <input required type="text" class="input-name" /></p>
+      <p>나이 : <input required type="number" /></p>
+      <p>
+        성별 :
+        <input required value="남" type="radio" name="ex4" /> 남
+        <input required value="녀" type="radio" name="ex4" /> 녀
+      </p>
+      <p>
+        <button class="add">추가하기</button>
+        <button class="name" type="button">이름순정렬</button>
+        <button class="age" type="button">나이순정렬</button>
+        <button class="man" type="button">남자명단</button>
+        <button class="woman" type="button">여자명단</button>
+      </p>
+      <p>이름검색 : <input type="text" class="search" /></p>
+      <ul class="result"></ul>
+    </form>
+    <hr />
+    <form class="ex5">
+      <p>5. todoApp</p>
+      <p><input type="text" placeholder="일정이름을 입력하세요" /></p>
+      <p><input type="date" /></p>
+      <p><input type="time" /></p>
+      <p><button>일정추가하기</button></p>
+      <p>
+        <button type="button">일정명으로정렬</button>
+        <button type="button">날짜순정렬</button>
+      </p>
+      <p><input type="text" placeholder="일정명을 검색하세요" /></p>
+      <ul class="result"></ul>
+    </form>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</body>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
 </html>
